@@ -61,6 +61,6 @@ def browser(browser_name):
     else:
         raise ValueError(f"Неизвестный браузер: {browser_name}")
 
-    driver.implicitly_wait(5)
+    driver.implicitly_wait(0)
     yield driver
     driver.quit()
